@@ -30,16 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private OnlyOneAdapter onlyOneAdapter = new OnlyOneAdapter(this,onlyOneList);
 
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if(newConfig.orientation== Configuration.ORIENTATION_LANDSCAPE) {
-// 什么都不用写
-        }
-        else{
-// 什么都不用写
-        }
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,10 +85,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     daI = 0-(xiaoI+zhaoI+yuI);
                 }
                 if (xiaoI>0){
-                    xiaoI =0-(daI+zhaoI+yuI);
+                    xiaoI = 0-(daI+zhaoI+yuI);
                 }
                 if (zhaoI>0){
-                    zhaoI =0-(daI+xiaoI+yuI);
+                    zhaoI = 0-(daI+xiaoI+yuI);
                 }
                 if (yuI>0){
                     yuI = 0-(daI+xiaoI+zhaoI);
@@ -194,13 +185,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             switch (name){
 
-                                case "大":
+                                case "大王":
 
                                 onlyOneBean2.da = Integer.toString(scoresLists.get(i).getSumscores());
 
                                 break;
 
-                                case "小":
+                                case "小王":
 
                                 onlyOneBean2.xiao = Integer.toString(scoresLists.get(i).getSumscores());
 
