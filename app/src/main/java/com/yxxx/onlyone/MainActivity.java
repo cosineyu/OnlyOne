@@ -185,13 +185,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             switch (name){
 
-                                case "大王":
+                                case "大":
 
                                 onlyOneBean2.da = Integer.toString(scoresLists.get(i).getSumscores());
 
                                 break;
 
-                                case "小王":
+                                case "小":
 
                                 onlyOneBean2.xiao = Integer.toString(scoresLists.get(i).getSumscores());
 
