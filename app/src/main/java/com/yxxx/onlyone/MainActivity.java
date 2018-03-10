@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         //定义listView控件
         listViewScores = findViewById(R.id.lv_scores);
         //定义EditText控件
@@ -147,12 +149,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ArrayList<ScoresList> scoresLists = new ArrayList<>();
 
                 ScoresList scoresList = new ScoresList();
-                scoresList.name ="大";
+                scoresList.name ="大王";
                 scoresList.sumscores =dasum;
                 scoresLists.add(scoresList);
 
                 ScoresList scoresList1 = new ScoresList();
-                scoresList1.name ="小";
+                scoresList1.name ="小王";
                 scoresList1.sumscores = xiaosum;
                 scoresLists.add(scoresList1);
 
