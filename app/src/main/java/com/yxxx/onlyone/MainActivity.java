@@ -149,12 +149,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ArrayList<ScoresList> scoresLists = new ArrayList<>();
 
                 ScoresList scoresList = new ScoresList();
-                scoresList.name ="大王";
+                scoresList.name ="大";
                 scoresList.sumscores =dasum;
                 scoresLists.add(scoresList);
 
                 ScoresList scoresList1 = new ScoresList();
-                scoresList1.name ="小王";
+                scoresList1.name ="小";
                 scoresList1.sumscores = xiaosum;
                 scoresLists.add(scoresList1);
 
@@ -187,13 +187,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             switch (name){
 
-                                case "大王":
+                                case "大":
 
                                 onlyOneBean2.da = Integer.toString(scoresLists.get(i).getSumscores());
 
                                 break;
 
-                                case "小王":
+                                case "小":
 
                                 onlyOneBean2.xiao = Integer.toString(scoresLists.get(i).getSumscores());
 
